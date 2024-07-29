@@ -15,3 +15,18 @@ Veritabanlarını oluşturmak, yönetmek ve veriler üzerinde işlem yapmak içi
 
 ![image info](/images/dbs.jpeg)
 Yukarıdaki şekilde de gördüğümüz üzere farklı kaynaklardan gelen sorgular DBMS yazılımı sayesinde farklı veritabanlarında kullanılır.
+
+
+## PostgreSQL Nedir ?
+Yukarıda anlattığımız gibi PostgreSql bir veri tabanı yönetim sistemidir. Açık kaynaklı ilişkisel veri tabanı yönetim sistemidir. Kısacası PostgreSql veri tabanı yönetim sistemi içerisinde SQL kullanarak verilerimizi yönetiyoruz, düzenliyoruz, siliyoruz, güncelliyoruz vs...
+
+İlişkisel veri tabanı dedik peki bu tam olarak nedir ?
+
+### İlişkisel Veri Tabanı Nedir ?
+İlişkisel veritabanı, verilerin tablolar içerisinde saklandığı veritabanıdır. Tablolar satırlar (rows) ve sütünlardan (columns) oluşur. Tablolar arasında ilişkiler olabilir, bu ilişkilerde ortak sütunlar diğer adıyla anahtar sütunlar ile kurulur. Bu şekilde veriler daha düzenli ve tutarlı şekilde kullanılabilir. 
+### Örnek Senaryo 
+Bir okulda öğrencilerin aldığı dersler için veritabanı oluşturalım. Bu veritabanında öğrenciler ve dersler hakkında bilgiler tutacağız. Ve bu iki tablo (öğrenciler ve dersler) arasında ilişki kuracağız. Çünkü her öğrenci bir veya daha fazla ders alabilir ve her ders bir veya daha fazla öğrenci içerebilir. 
+![image info](/images/table_1.png)
+Tablolarımızın bu şekilde oluştuğunu düşünelim. Daha sonra ilişkiyi kuracağımız üçüncü tabloyu oluşturalım. 
+![image info](/images/table_2.png)
+Öğrenci tablosundaki her bir öğrenci bu oluşturduğumuz 3.tablo ile dersler tablosuna bağlanmış olur. Bu oluşturduğumuz 3.tablo öğrenci id ve kurs id saklar. Öğrenciler ve Kurslar tablosu arasında bir ilişki kurar. Tabi PostgreSql'de tablolu oluştururken bazı anahtar kelimeleri kullanarak bunları yapıyoruz. Resim şeklinde anlatmaya çalışmamın sebebi , ilişkisel veri tabanı mantığını daha iyi anlamak.
